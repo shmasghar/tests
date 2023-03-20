@@ -1,6 +1,6 @@
 ---
 - name: Ansible Delete user
-  hosts: amaster.odomain.local
+  hosts: at.odomain.local
   remote_user: root
   become: yes
   tasks:
