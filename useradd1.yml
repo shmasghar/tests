@@ -1,6 +1,6 @@
 ---
 - name: Ansible Create user
-  hosts: at.odomain.local
+  hosts: Ansible_Node.faysalbank.com
   remote_user: root
   tasks:
     - name: Add the user
