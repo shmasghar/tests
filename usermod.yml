@@ -1,6 +1,6 @@
 ---
 - name: Ansible Modify user
-  hosts: amaster.odomain.local
+  hosts: Ansible_Node.faysalbank.com
   remote_user: root
   tasks:
     - name: Modify the user
