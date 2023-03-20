@@ -1,0 +1,9 @@
+---
+- name: Ansible Create user
+  hosts: amaster.odomain.local
+  remote_user: root
+  tasks:
+    - name: Add the user
+      ansible.builtin.user:
+        name: test
+        comment: Test User    

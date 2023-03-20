@@ -1,0 +1,11 @@
+---
+- name: Ansible Delete user
+  hosts: amaster.odomain.local
+  remote_user: root
+  become: yes
+  tasks:
+    - name: Remove the user
+      ansible.builtin.user:
+        name: test
+        state: absent
+        remove: yes

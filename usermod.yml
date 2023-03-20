@@ -1,0 +1,11 @@
+---
+- name: Ansible Modify user
+  hosts: amaster.odomain.local
+  remote_user: root
+  tasks:
+    - name: Modify the user
+      ansible.builtin.user:
+        name: test
+        uid: 1001
+        state: present
+        comment: Test User    

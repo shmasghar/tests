@@ -1,0 +1,10 @@
+---
+- name: Set minimum expiration date for password
+  hosts: amaster.odomain.local
+  remote_user: root
+  become: yes
+  tasks:
+    - name: Set minimum expiration date for password
+      ansible.builtin.user:
+       name: test
+       password_expire_min: 5
